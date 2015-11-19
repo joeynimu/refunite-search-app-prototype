@@ -26,7 +26,14 @@ https://github.com/joeynimu/refunite-search-app-prototype.git
 ```
 Or simply download the zip file on your computer.
 
-Open the index.html file on your browser and start interacting with the App.
+Upload the files on a sever. If working locally, you can use local servers such as [xampp](https://www.apachefriends.org/download.html) or [mamp](https://www.mamp.info/en/)
+
+Then open your browser and navigate to the app's url e.g
+```
+http://localhost/refunite-search-app-prototype
+```
+
+**The app has to be accessed on a server otherwise it won't work because it relies on http requests. Ensure the files are accessed from a server**
 
 ##Emulating and Testing in Mobile Devices; Android/IOS
 
