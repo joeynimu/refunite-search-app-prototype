@@ -1,0 +1,51 @@
+<div class="container backDiv">
+    <div><a href="#/home" class="btn btn-primary back"><i class="fa fa-arrow-circle-left"></i>Back</a></div>
+    <div class="clearfix"></div>
+</div>
+<!-- the refugee -->
+      <div class="fugeeslist">
+            <div class="person list-group inView">
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 no-padd">
+                    <div class="col-xs-12 col-sm-12 col-md-12 profile-pic text__align_center no-padd">
+                        
+                          <img src="images/128.jpg" alt="">
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 no-padd">
+                        <div class="name">{{ inviewRefugee.name }}</div>
+                        <div class="no-padd col-md-12">
+                            <div class="col-xs-4 col-sm-4 col-md-4 age_area">
+                                <!-- <i class="fa fa-calendar"></i> -->
+                                <span>Age: </span> {{ inviewRefugee.age + ' Yrs' }}
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 gender_area">
+                                <i class="fa fa-female" ng-show="{{ inviewRefugee.gender === 'female'}}"></i>
+                                <i class="fa fa-male" ng-show="{{ inviewRefugee.gender === 'male'}}"></i>
+                                {{ inviewRefugee.gender }}
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 location_area"><span class="glyphicon glyphicon-map-marker"></span>{{ inviewRefugee.company }}</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="no-padd col-md-12">
+                        	<div class="col-xs-12 col-sm-6 col-md-6 no-padd phone_area"><i class="fa fa-mobile"></i> {{ inviewRefugee.phone }}</div>
+                        	<div class="col-xs-12 col-sm-6 col-md-6 no-padd email_area"><i class="fa fa-envelope"></i> {{ inviewRefugee.email }}</div>
+                        	<div class="clearfix"></div>                        	
+                        </div>
+                        <div class="no-padd col-md-12">
+                        	<h4 class="about_header">About {{ inviewRefugee.name }}</h4>
+                        	<p class="about_copy">{{ inviewRefugee.about }}</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+<div class="container hidden-md hidden-lg">
+    <div><a href="#/home" class="btn btn-primary back"><i class="fa fa-arrow-circle-left"></i>Back</a></div>
+    <div class="clearfix"></div>
+</div>

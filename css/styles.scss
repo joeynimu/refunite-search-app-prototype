@@ -1,0 +1,244 @@
+html, body, input, select, textarea
+            {
+               /* font-size: 1.05em !important;*/
+               font-family: 'Noticia Text', serif;
+            }
+            #the__area{margin-bottom: 60px;}
+            .the__links a{padding:5px;text-align: center;}
+
+            footer{
+                background-color: #f8f8f8;
+                border-color: #e7e7e7;
+                position:fixed;height:50px;bottom: 0;
+                width:100%;
+            }
+
+            footer > div{text-align: center;display: table;height:100%;}
+            footer > div > p{display: table-cell;vertical-align: middle;text-align: center;}
+ // variables
+ $purple: #5117a7;
+ $lightblue:#17a5a7;
+ //loader
+ .loader{position: fixed;width:100%;height:100%;background-color: #1abc9c;z-index: 100;}
+ .sk-folding-cube {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+.wrapper{display: none;}
+
+ .clearfix{clear:both;}
+ .load__more{text-align: center;background-color: $purple;color:#fff;transition:all 0.3s ease;}
+ .load__more:hover{background-color: $lightblue;color:#000;}
+ .backBtn{    text-align: center;
+    background-color: #5117a7;
+    color: #fff;
+    transition: all 0.3s ease;
+     display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.back .fa-arrow-circle-left{padding-right:5px;}
+.backBtn:hover{
+background-color: $lightblue;color:#000;text-decoration: none;
+}
+
+
+
+// refugees list styling here
+.fugeeslist{
+  position: relative;
+  -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+}
+
+.person.ng-move,
+.personrepeat.ng-enter,
+.person.ng-leave {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+}
+.person.ng-leave.ng-leave-active,
+.person.ng-move,
+.person.ng-enter {
+    opacity:0;
+    max-height:0;
+}
+.person.ng-leave,
+.person.ng-move.ng-move-active,
+.person.ng-enter.ng-enter-active {
+    opacity:1;    
+}
+
+/**
+ * Stagger Leave (hide) animation
+ */
+.person.ng-leave-stagger {
+    /* this will have a 100ms delay between each successive leave animation */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/**
+ * Stagger ENTER ANIMATION
+ */
+.person.ng-enter-stagger {    
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.no-padd{padding:0px;}
+.age_area{
+padding:0px;
+}
+.gender_area{
+padding:0px 3px 0px 3px;
+text-align:center;
+}
+.location_area{  
+  padding:0px;
+}
+.text__align_center{text-align: center;}
+.profile-pic{transition:all 0.3s ease;transform: rotate(0deg);}
+.profile-pic img{border-radius: 50%;border: 5px solid $purple;margin:auto;text-align: center;}
+.name{text-align: center;font-weight: bold;color:$lightblue;padding:3px 0px 3px 0px;font-size: 1.5em;}
+.person{
+  padding-bottom: 10px;border-bottom:dashed 1px #ccc;transition:all 0.3s ease;padding:10px;
+  &:hover{
+     background-color: #ccc;
+  }
+  &.inView{
+    &:hover{
+       background-color: rgba(204,204,204,0.5);
+      .profile-pic{
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+
+
+// fonts
+
+h1.header{text-align: center;color:$purple;margin:0px;padding:10px 0px 10px 0px;}
+.about_header{color:orange;}
+.about_copy{text-align: justify;}
+.backDiv{margin-bottom: 5px;}
+
+@media screen and (min-width: 240px) and (max-width: 480px){
+  .container{padding:0px 5px 0px 5px;}
+  // mobile styling
+  .fugeeslist{width:95%;margin:auto;}
+}
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+  //ipad styling
+  .fugeeslist{width:90%;margin:auto;}
+               
+ }
+
+ @media screen and (min-width:1025px){
+  .fugeeslist{width:600px;margin:auto;}
+  .location_area, .email_area{text-align: right;}
+ }
