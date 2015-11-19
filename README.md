@@ -30,7 +30,7 @@ Open the index.html file on your browser and start interacting with the App.
 
 ##Emulating and Testing in Mobile Devices; Android/IOS
 
-The App is made using html5 and javascript and it should work on android and IOS.
+The App is made using html5 and javascript and it should work on Android and IOS.
 
 To test this, [install ripple emulator on chrome](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc?hl=en)
 
